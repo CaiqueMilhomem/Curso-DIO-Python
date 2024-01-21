@@ -17,3 +17,26 @@ print(dados_caique["Idade"])
 
 dados_caique2["idade"] = 20
 print(dados_caique2)
+
+
+####################################################################################################333
+
+contatos = {
+    "caique@gmail.com" : {"nome" : "Caique", "telefone" : "1234-5678"},
+    "lituania@gmail.com" : {"nome" : "Lituania", "telefone" : "1234-5678"},
+    "macedonia@gmail.com" : {"nome" : "Macedonia", "telefone" : "1234-5678"},
+}
+
+telefone_caique = contatos["caique@gmail.com"]["telefone"]
+
+print(telefone_caique)
+
+
+#utilizando for
+
+for chave in contatos: 
+    print(chave, contatos[chave])
+
+
+for chave, valor in contatos.items():
+    print(chave, valor)
